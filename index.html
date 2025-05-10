@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Secure Password Generator</title>
+  <title>Generador de Contraseñas Seguras</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Secure Password Generator</h1>
+    <h1>Generador de Contraseñas Seguras</h1>
 
     <!-- Password Display -->
     <div class="password-display">
       <input type="text" id="password" readonly>
-      <button id="copy-btn">Copy</button>
+      <button id="copy-btn">Copiar</button>
     </div>
 
     <!-- Options -->
     <div class="options">
       <label>
-        Length:
+        Longitud:
         <input type="number" id="length" min="4" max="50" value="12">
       </label>
       <label>
-        <input type="checkbox" id="include-lowercase" checked> Lowercase Letters
+        <input type="checkbox" id="include-lowercase" checked> Letras Minúsculas
       </label>
       <label>
-        <input type="checkbox" id="include-uppercase" checked> Uppercase Letters
+        <input type="checkbox" id="include-uppercase" checked> Letras Mayúsculas
       </label>
       <label>
-        <input type="checkbox" id="include-numbers" checked> Numbers
+        <input type="checkbox" id="include-numbers" checked> Números
       </label>
       <label>
-        <input type="checkbox" id="include-symbols" checked> Special Characters
+        <input type="checkbox" id="include-symbols" checked> Caracteres Especiales
       </label>
     </div>
 
-    <!-- Generate Button -->
-    <button id="generate-btn">Generate Password</button>
+    <!-- Generate and Check Buttons -->
+    <button id="generate-btn">Generar Contraseña</button>
+    <button id="check-btn">¿Ha sido comprometida?</button>
+
+    <!-- API Result -->
+    <div id="api-result"></div>
   </div>
 
   <script src="script.js"></script>

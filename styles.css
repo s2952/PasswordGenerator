@@ -1,71 +1,39 @@
 body {
-  font-family: Arial, sans-serif;
+  background-color: black;
+  color: lime;
+  font-family: "Courier New", monospace;
+  text-align: center;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f4f4f9;
+  height: 100vh; /* Altura completa de la ventana */
 }
 
 .container {
-  background: #ffffff;
+  max-width: 600px;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 400px;
-  width: 100%;
+  border: 2px solid lime;
+  border-radius: 10px;
 }
 
-h1 {
-  margin-bottom: 20px;
-}
-
-.password-display {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-#password {
-  flex: 1;
+input, button {
+  background-color: black;
+  color: lime;
+  border: 1px solid lime;
   padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-
-#copy-btn {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#copy-btn:hover {
-  background-color: #0056b3;
-}
-
-.options label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: lime;
+  color: black;
+  cursor: pointer;
+}
+
+#api-result {
+  margin-top: 20px;
+  font-size: 1.2em;
 }

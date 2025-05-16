@@ -1,39 +1,31 @@
 body {
-  background-color: black;
-  color: lime;
-  font-family: "Courier New", monospace;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Altura completa de la ventana */
+  background-color: #0e0e0e;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
 }
 
 .container {
-  max-width: 600px;
-  padding: 20px;
-  border: 2px solid lime;
+  max-width: 800px;
+  margin: auto;
+  border: 2px solid #333;
   border-radius: 10px;
+  padding: 30px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
 }
 
-input, button {
-  background-color: black;
-  color: lime;
-  border: 1px solid lime;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
+h1 {
+  color: #00ffff;
+  font-size: 2em;
 }
 
-button:hover {
-  background-color: lime;
-  color: black;
-  cursor: pointer;
+h2 {
+  color: #999999;
+  font-style: italic;
 }
 
-#api-result {
-  margin-top: 20px;
+p {
   font-size: 1.2em;
+  margin-bottom: 20px;
 }
